@@ -1,0 +1,273 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat', sans-serif;
+}
+nav{
+  height: 12vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .logo{
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+nav .logo:hover{
+  color: red;
+  transition: 0.4s ease;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 300px;
+  margin: 0px auto;
+}
+
+nav ul li{
+  text-decoration: none;
+  list-style: none;
+  margin: 35px 20px;
+}
+
+nav ul li a{
+  color: rgba(0,0,0,0.25);
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav ul li a:hover{
+  color: red;
+  text-decoration: none;
+  text-transform: 0.5s ease;
+} 
+
+button{
+  margin: 0px 10px 0px 0px;
+  min-width: 150px;
+  min-height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+button:hover{
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border: 2px solid black;
+  transition: all 0.5s ease;
+}
+
+.banner{
+  background-image: url('https://www.worldphoto.org/sites/default/files/%C2%A9%20Matej%20Michalik%2C%20Slovakia%2C%20Commended%2C%20Open%2C%20Travel%2C%202016%20Sony%20World%20Photography%20Awards.jpg');
+  min-height: 70vh;
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .banner-message{
+  color: white;
+  font-weight: 700;
+  font-size: 52px;
+}
+
+.banner .banner-message:hover{
+  color: crimson;
+  font-weight: 700;
+  transition: 0.5s ease-out;
+}
+
+.banner .banner-upfront-message{
+  font-weight: 100;
+  font-size: 26px;
+  color: rgba(255,255,255, 0.75);
+  margin-bottom: 30px;
+}
+
+.info{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 15px;
+  padding: 0 25px;
+}
+
+.info h3{
+  font-size: 60px;
+  font-weight: 700;
+  padding: 0 40px;
+  margin: 10px;
+  max-width: 1100px;
+}
+
+.info h4{
+  font-size: 20px;
+  padding: 0 40px;
+  margin: 10px;
+  max-width: 1000px;
+  line-height: 2rem;
+}
+
+.info a{
+  font-size: 20px;
+  padding: 0 40px;
+  margin: 10px;
+  max-width: 1100px;
+}
+
+.add-message{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 5px auto;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: 700;
+  color:black;
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0,0.1);
+  margin: 0 15px;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 40vh;
+  align-items: center;
+  justify-content: space-around;
+  outline: none;
+  margin: 20px auto;
+  border: none;
+}
+
+
+.card-image{
+  height: 300px;
+  width: 450px;
+  margin: 40px;
+  border-radius: 50%;
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+img:hover{
+  filter: none;
+  transition: 0.2s ease;
+}
+
+.card-name{
+  width: 400px;
+  text-align: left;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  color: black;
+  font-weight: 700;
+}
+
+.card-des{
+  width: 400px;
+  text-align: left;
+  margin: 20px auto;
+  line-height: 2em;
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 100;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  padding: 20px;
+  min-height: 20vh;
+}
+
+.form label{
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.form input[type="text"]{
+  min-width: 300px;
+  min-height: 40px;
+  margin-top: -5px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.form input[type="text"]:focus{
+  border: 2px solid red;
+  transition: 1s ease;
+}
+
+.form input[type="submit"]{
+  min-width: 150px;
+  min-height: 50px;
+  margin: 20px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form input[type="submit"]:hover{
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border: 2px solid black;
+  transition: all 1s ease;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  font-size: 16px;
+  font-weight: 700;
+}
